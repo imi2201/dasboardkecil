@@ -31,11 +31,26 @@ col3,col4 = st column(2)
 with col3:
     st.write("pertanyaan 1 akan ditunjukkan 10 product")
     st.write("yang memiliki tingkat pembelian tertinggi")
+    #berdasarkan visualisasi data saya sebelumnya
     category_counts = product_df.groupby("product_category_name")["order_id"].count()
     top_categories = category_counts.sort_values(ascending=False).head(10)
     plt.barh(y=top_categories.index, width=top_categories.values)
     plt.xlabel('Count')  # Label for x-axis
     plt.ylabel('Product Category')  # Label for y-axis
     plt.title('Top 10 Product Ordered')
+    st.pyplot(plt)
+    plt.clf()
+
+with col4:
+    st.write("pertanyaan 1 akan ditunjukkan 10 product")
+    st.write("yang memiliki tingkat pembelian tertinggi")
+    
+    city_counts = seller_order_df.groupby("seller_city")["seller_id"].count()
+    top_city = city_counts.sort_values(ascending=False).head(10)
+    plt.barh(y=top_city.index, width=top_city.values)
+    plt.xlabel('banyaknya penjualan')  # Label for x-axis
+    plt.ylabel('Seller city')  # Label for y-axis
+    plt.title('Top 10 Seller city by Order')  # Title for the plot
+    
     st.pyplot(plt)
     plt.clf()
