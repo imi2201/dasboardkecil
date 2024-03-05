@@ -13,7 +13,7 @@ product_df = pd.read_csv('https://raw.githubusercontent.com/imi2201/dasboardkeci
 st.title('Dashboard E-Commerce')
 
 # Create two columns
-col1, col2 = st.column(2)
+col1, col2 = st.columns(2)
 
 # Display seller data in the first column
 with col1:
@@ -26,7 +26,8 @@ with col2:
     st.write(product_df)
 
 st.write("diberikan data tersebut akan di cari:")
-col3,col4 = st.column(2)
+
+col3, col4 = st.columns(2)
 
 with col3:
     st.write("pertanyaan 1 akan ditunjukkan 10 product")
