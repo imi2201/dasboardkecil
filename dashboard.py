@@ -44,7 +44,7 @@ with col3:
 
 with col4:
     st.write("pertanyaan 2 akan ditunjukkan 10 kota Seller")
-    st.write("yang memiliki tingkat penjualan di kotanya")
+    st.write("yang memiliki tingkat penjualan tertinggi")
     
     city_counts = seller_df.groupby("seller_city")["seller_id"].count()
     top_city = city_counts.sort_values(ascending=False).head(10)
