@@ -26,7 +26,7 @@ with col2:
     st.write(product_df)
 
 st.write("diberikan data tersebut akan di cari:")
-col3,col4 = st column(2)
+col3,col4 = st.column(2)
 
 with col3:
     st.write("pertanyaan 1 akan ditunjukkan 10 product")
