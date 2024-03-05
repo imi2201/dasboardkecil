@@ -6,8 +6,8 @@ from babel.numbers import format_currency
 
 sns.set(style='dark')
 
-seller_df = pd.read_csv(https://'raw.githubusercontent.com/imi2201/dasboardkecil/main/seller_order.csv')
-product_df = pd.read_csv(https://'raw.githubusercontent.com/imi2201/dasboardkecil/main/product_items.csv')
+seller_df = pd.read_csv('https://raw.githubusercontent.com/imi2201/dasboardkecil/main/seller_order.csv')
+product_df = pd.read_csv('https://raw.githubusercontent.com/imi2201/dasboardkecil/main/product_items.csv')
 
 #main title
 st.title('Dashboard E-Commerce')
