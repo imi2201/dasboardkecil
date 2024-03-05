@@ -46,7 +46,7 @@ with col4:
     st.write("pertanyaan 1 akan ditunjukkan 10 product")
     st.write("yang memiliki tingkat pembelian tertinggi")
     
-    city_counts = seller_order_df.groupby("seller_city")["seller_id"].count()
+    city_counts = seller_df.groupby("seller_city")["seller_id"].count()
     top_city = city_counts.sort_values(ascending=False).head(10)
     plt.barh(y=top_city.index, width=top_city.values)
     plt.xlabel('banyaknya penjualan')  # Label for x-axis
