@@ -3,12 +3,14 @@
   The prosess analysis is on my notebook file (.ipynb)
   I also using merged data for my dashboard
 
-#Setup environtment for windows
+## Setup Environtment (in Windows)
+```
   python -m venv myenv
-  ## Activate the virtual environment
+  # Activate the virtual environment
   myenv/Scripts/activate
-  ## Install library(s)
+  # Install library(s)
   pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+```
   ##Run Streamlit
     streamlit run dashboard.py
 
