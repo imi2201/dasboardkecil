@@ -12,9 +12,9 @@
   pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 ```
 ##Run Streamlit
-  `
+  ```
   streamlit run dashboard.py
-`
+```
 ## I already Deploy my dashboard on this link:
 https://dasboardkecil-f5wcds93jbaxvcbjdajzic.streamlit.app/
 
